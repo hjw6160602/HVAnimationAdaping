@@ -70,7 +70,7 @@
         UIView *Txt4 = [self.headerUpView viewWithTag:1003];
         NSInteger Txt4W = Txt1.frame.size.width;
         NSInteger Txt4H = Txt1.frame.size.height;
-        Txt4.frame = CGRectMake(Screen_width*ASPECT_RATIO4 - Txt4W/2, NewTxtHeight, Txt4W, Txt4H);
+        Txt4.frame = CGRectMake(Screen_width*ASPECT_RATIO4-Txt4W/2-4, NewTxtHeight, Txt4W+8, Txt4H);
         
         _SelectViewY += _ExtraHeight;
         self.selectView.frame = CGRectMake(0, _HeaderViewH-_SelectViewH, Screen_width, _SelectViewH);
