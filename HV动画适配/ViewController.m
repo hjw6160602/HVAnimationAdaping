@@ -73,7 +73,7 @@
         Txt4.frame = CGRectMake(Screen_width*ASPECT_RATIO4 - Txt4W/2, NewTxtHeight, Txt4W, Txt4H);
         
         _SelectViewY += _ExtraHeight;
-        self.selectView.frame = CGRectMake(0, _SelectViewY, Screen_width, _SelectViewH);
+        self.selectView.frame = CGRectMake(0, _HeaderViewH-_SelectViewH, Screen_width, _SelectViewH);
     }
     [self.headerUpView addSubview:self.lineView];
     //在headView上添加Dropdown，则在headUpView下层
